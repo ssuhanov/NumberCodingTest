@@ -18,6 +18,13 @@ class NumberDecoderTests {
     }
 
     @Test
+    fun test10BaseDecode() {
+        val correctResult = "18000000"
+        val result = instance.decode(18000000, 10)
+        Assert.assertEquals("result should be $correctResult", correctResult, result)
+    }
+
+    @Test
     fun test16BaseDecode() {
         val correctResult = "112A880"
         val result = instance.decode(18000000, 16)
