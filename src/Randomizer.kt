@@ -10,6 +10,8 @@ class Randomizer {
     }
 
     fun randomNumber(from: Int, to: Int): Int {
-        return (Random().nextInt(to - from) + from) * 100000
+        val from = from * 100000
+        val to = to * 100000
+        return (Random().nextInt(to - from) + from)
     }
 }
