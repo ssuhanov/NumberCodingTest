@@ -51,4 +51,11 @@ class NumberDecoderTests {
         val result = instance.decode(18000000, 62)
         Assert.assertEquals("result should be $correctResult", correctResult, result)
     }
+
+    @Test
+    fun test94BaseDecode() {
+        val correctResult = "L\"BY"
+        val result = instance.decode(18000000, 94)
+        Assert.assertEquals("result should be $correctResult", correctResult, result)
+    }
 }
